@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home - Robby Fresh Show</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    
+    <a href="index.html"><img src="images/robCast-logo.png" alt="RobCast logo"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Welcome to my new podcast!</h2>
+    <p>Here you can find the latest episodes of my show.</p>
+    <h3>Latest Episodes</h3>
+    <ul id="episodes">
+      <li>
+        <h4>Episode 1: Name Of Episode</h4>
+        <p>In this episode, we explore the meaning of life blah, blah</p>
+        <audio id="episode1" src="episode1.mp3"></audio>
+        <button onclick="playEpisode(1)">Play</button>
+      </li>
+      <li>
+        <h4>Episode 2: Name of Episode</h4>
+        <p>In this episode, we take a deep dive into the world of blahzay, blah</p>
+        <audio id="episode2" src="episode2.mp3"></audio>
+        <button onclick="playEpisode(2)">Play</button>
+      </li>
+    </ul>
+  </main>
+  <button id="menu-button">Menu</button>
+  <div id="contactf" class="contactf">
+  <aside>
+    <h3>Contact</h3>
+    <form id="contact-form">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" required><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" required></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </aside>
+  </div>
+  <footer>
+    <p>Follow me on social media:</p>
+    <ul>
+      <li><a href="https://twitter.com/djrobbyfresh"><i class="fab fa-twitter"></i> Twitter</a></li>
+      <li><a href="https://www.facebook.com/robby.jenesky"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+      <li><a href="https://www.instagram.com/robjenesky/"><i class="fab fa-instagram"></i> Instagram</a></li>
+    </ul>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
